@@ -1,0 +1,34 @@
+<div class="input-form">
+    <input placeholder="Type Username" [(ngModel)]="userName">
+    <button (click)="userRequest()" >SEARCH</button>
+</div>
+
+<div class="row">
+    <h2>Name: {{user.name}}</h2>
+    <img [src]="user.avatar_url">
+    <h2>Repositories: {{user.public_repos.repos}}</h2>
+    <h2>Followers: {{user.followers}}</h2>
+    <h2>Following: {{user.following}}</h2>
+    <h2><a [href]="user.repos_url">Go to the github page</a></h2>
+
+</div> 
+
+<!-- <div class="row">
+    <blockquote class="text-center text-lg">
+        <p>{{quote.quote}}</p>
+        <footer><cite>{{quote.author}}</cite></footer>
+    </blockquote>
+</div>  -->
+
+<!-- <h1>My Goals for Today</h1>
+<hr>
+
+<ul>
+  <li *ngFor='let goal of goals'>{{goal.name}}</li>
+</ul>
+
+<div >
+    <div >
+        <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
+    </div>
+</div> -->

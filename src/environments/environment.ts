@@ -3,9 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl:"http://quotes.stormconsultancy.co.uk/random.json",
+  acces_token: "452bccc894025c12d284ecf539fd5289873c579b"
+  
 };
-
+//acces_token: 452bccc894025c12d284ecf539fd5289873c579b
+ 
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
@@ -14,3 +18,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
